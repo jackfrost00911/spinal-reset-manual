@@ -1,0 +1,210 @@
+/* =========================================
+   1. RESET & BASIC TYPOGRAPHY
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4; /* Light grey background for contrast */
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* =========================================
+   2. LAYOUT CONTAINER (The Paper Effect)
+   ========================================= */
+.container {
+    max-width: 800px; /* Standard width for reading */
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1); /* Subtle drop shadow */
+}
+
+/* =========================================
+   3. TYPOGRAPHY STYLES
+   ========================================= */
+h1 {
+    text-align: center;
+    color: #cc0000; /* Dark Red for urgency */
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+h2 {
+    color: #222;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px; /* Slightly larger text is better for conversions */
+}
+
+.subheadline {
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    color: #555;
+    font-weight: normal;
+    font-style: italic;
+}
+
+ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* =========================================
+   4. VIDEO WRAPPER (Responsive YouTube)
+   ========================================= */
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background: #000;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* =========================================
+   5. BUTTONS (Call to Action)
+   ========================================= */
+.btn {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f7c200; /* "Amazon Gold" - High conversion color */
+    color: #000;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    border-bottom: 4px solid #d9aa00; /* 3D effect */
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ffe066;
+    margin-top: 32px; /* Slight press effect */
+    border-bottom: 2px solid #d9aa00;
+}
+
+.secondary-btn {
+    background-color: #007bff; /* Blue for downloads */
+    color: #fff;
+    border-bottom: 4px solid #0056b3;
+    font-size: 1.1rem;
+}
+
+.secondary-btn:hover {
+    background-color: #0069d9;
+    color: #fff;
+}
+
+/* =========================================
+   6. SPECIAL BOXES (Bonuses, Guarantees)
+   ========================================= */
+.bonus-box {
+    background: #eef9ff; /* Light blue */
+    border: 2px dashed #bce0fd;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+
+.order-info {
+    background: #f0fff4; /* Light green */
+    padding: 20px;
+    border-left: 5px solid #28a745;
+    margin-bottom: 30px;
+}
+
+.guarantee {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+    background: #fafafa;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+/* =========================================
+   7. FOOTER (Compliance)
+   ========================================= */
+.footer {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer p {
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   8. MOBILE RESPONSIVENESS
+   ========================================= */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .btn {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+}
